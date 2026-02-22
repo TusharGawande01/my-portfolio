@@ -20,7 +20,7 @@ header{
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     color: white;
-    padding: o.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
 }
@@ -106,7 +106,7 @@ section{
     width: 30vh;
     border-radius: 60%;
 }
-info-box{
+.info-box{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -134,6 +134,14 @@ info-box{
     color: transparent;
     font-size: 2rem;
 
+}
+.about-desc{
+    max-width: 650px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+    color: #555;
+    text-align: center;
 }
 .btn-group{
     display: flex;
@@ -251,9 +259,9 @@ gap: 2rem;
     transform: translateY(-10px)scale(1.02);
 }
 .project-card img{
-    width: 20vw;
-    border-radius: 1rem;
-
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 .project-card:hover .btn{
     border: 2px solid white;
@@ -267,9 +275,19 @@ gap: 2rem;
     color: black;
 }
 
-.project-card{
-    font-size: 2rem;
-    font-weight: 500;
+.project-card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-card p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
 }
 
 
@@ -285,63 +303,82 @@ gap: 2rem;
   margin-top: 5rem;
 
 }
-.input-box input{
-    
+.input{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input input{
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;  /* space for icon */
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
-
+    font-size: 1rem;
 }
-.input-box input::placeholder{
-    font-size: 3rem;
 
+.input input::placeholder{
+    font-size: 1rem;
+    color: #777;
+}
+
+.input i{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #555;
 }
 
 .input{
     position: relative;
+    width: 100%;
+    max-width: 500px;
 }
+
+.input input{
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem; /* space for icon */
+    border-radius: 3rem;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
 .input i{
     position: absolute;
-    font-size: 4rem;
+    left: 1rem;
     top: 50%;
-    left: 10px;
-    transform: translate(50%,-50%);
-
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #555;
+}
+.input input:focus{
+    outline: none;
+    border-color: #009dff;
 }
 
 footer{
-    bottom: 0;
-    left: 0;
-    height: 10rem;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem; 
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
 }
 
 footer ul{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
 
-    gap: 3rem;
-     margin: 0;     
-    padding: 0;
-}
-footer ul li{
-    list-style: none;  
-}
 footer ul li a{
     color: black;
     font-weight: 600;
 }
+
 .copyright{
-    font-weight: 300;
-  
- 
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /*responsiveness*/
@@ -401,6 +438,22 @@ footer ul li a{
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
+    section{
+        padding: 6rem 5%;
+    }
+
+    .about .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-group{
+        flex-direction: column;
+    }
    
     
 }
@@ -438,10 +491,15 @@ display: block;
     header .logo{
         font-size: 1.5rem;
     }
-
-    .about-container img{
-        width: 80vh;
+     .about-desc{
+        font-size: 0.9rem;
+        padding: 0 1rem;
     }
+
+    .about img{
+    width: 250px;
+    max-width: 100%;
+}
     .input-box input{
         padding: 0.5rem 3rem;
         width: 80%;
@@ -451,7 +509,29 @@ display: block;
 font-size: 1.5rem;
 
     }
+    .input input{
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+.input input::placeholder{
+    font-size: 0.9rem;
+}
+
+.input i{
+    font-size: 1rem;
+    left: 0.8rem;
+}
     footer ul{
         gap: 1rem;
+    }
+     .input input{
+        padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .input i{
+        font-size: 1rem;
+        left: 0.8rem;
     }
 }
