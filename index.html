@@ -11,27 +11,32 @@
 </head>
 
 <body>
+    <div id="tsparticles"></div>
     <header class="header">
         <a href="#" class="logo"><span>Tushar</span></a>
 
         <ul class="nav-links">
             <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#">Contacts</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 
         <i class="bi bi-list" id="menu-icon"></i>
 
-        <button class="visit-btn">Visit Github</button>
+        <button id="theme-toggle" class="visit-btn">
+            🌙
+        </button>
+
+        <a href="https://github.com/TusharGawande01" target="_blank" class="visit-btn">Visit Github</a>
 
     </header>
 
@@ -43,21 +48,28 @@
                 <div class="text">
                     <h3>Hi, I'm</h3>
                     <h1>Tushar Gawande</h1>
-                    <span>FullStack Developer</span>
-       <p class="about-desc">
-    I am a passionate Full Stack Java Developer with strong knowledge of 
-    Java, Spring Boot, REST APIs, MySQL, and frontend technologies like 
-    HTML, CSS, JavaScript, and React.
-</p>
+                    <span class="typing-text">Full Stack Developer</span>
+                    <p class="about-desc">
+                        I am a passionate Full Stack Java Developer with strong knowledge of
+                        Java, Spring Boot, REST APIs, MySQL, and frontend technologies like
+                        HTML, CSS, JavaScript, and React.
+                    </p>
                 </div>
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
+                    <a href="./assests/TUSHAR_FULLSTACK Devoleper_CVF.pdf" download class="btn">
+                        Download CV
+                    </a>
+                    <div class="btn"><a href="#contact">Contact</a></div>
                 </div>
 
                 <div class="socials">
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-linkedin"></i>
+                    <a href="https://github.com/TusharGawande01" target="_blank" class="social-icon">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="www.linkedin.com/in/tushar-gawande" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
                 </div>
 
             </div>
@@ -112,6 +124,23 @@
                         services, and database connectivity for full-stack development.</p>
                 </div>
 
+                <div class="grid-card">
+                    <span>MySQL</span>
+                    <h3></h3>
+                    <p> I use MySQL as a relational database management system to store and manage data efficiently.
+                        I can create databases, tables, relationships, and perform data operations.
+                        I understand primary keys, foreign keys, constraints, and integration with backend applications.
+                    </p>
+                </div>
+
+                <div class="grid-card">
+                    <span>SQL</span>
+                    <h3></h3>
+                    <p> I have strong knowledge of SQL for managing and manipulating relational databases.
+                        I can write complex queries using SELECT, JOIN, GROUP BY, HAVING, and subqueries.
+                        I understand database design, normalization, indexing, and CRUD operations.</p>
+                </div>
+
             </div>
 
         </div>
@@ -129,34 +158,39 @@
                     updating patient details, and deleting patient records. It performs complete CRUD operations using
                     RESTful web services.</p>
                 <div class="btn-group">
-                     <a href="#" class="btn">Live Demo</a>
-                    <div class="btn"><a href="...">Github Link</a></div>
-                    </div>
+                    <a href="https://github.com/TusharGawande01/HospitalManagement.git" class="btn" target="_blank">Live
+                        Demo</a>
+                    <div class="btn"><a href="https://github.com/TusharGawande01/HospitalManagement.git"
+                            target="_blank">Github Link</a></div>
                 </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assests/pro2.png" alt="">
+            <h3>Movie Ticket Booking System</h3>
+            <p>The system manages ticket booking details such as customer name, seat count, and booking information.
+                It provides complete CRUD operations through REST APIs to handle booking management efficiently.</p>
+            <div class="btn-group">
+                <a href="https://github.com/TusharGawande01/MovieTicketBookingSystems.git" target="_blank"
+                    class="btn">Live Demo</a>
+                <div class="btn"><a href="https://github.com/TusharGawande01/MovieTicketBookingSystems.git"
+                        target="_blank">Github Link</a></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assests/pro3.png" alt="">
+            <h3>Furniture E-Commerce Web Application</h3>
+            <p>The application enables customers to view furniture items, add products to cart, place orders, and
+                manage their accounts. Admin users can add, update, and delete products from the system. The project
+                demonstrates complete CRUD operations, authentication, and online shopping workflow.</p>
+            <div class="btn-group">
+                <a href="#" class="btn" onclick="openModal(event)">Live Demo</a>
+                <a href="#" class="btn" onclick="openModal(event)">GitHub Link</a>
             </div>
 
-            <div class="project-card">
-                <img src="./assests/pro2.png" alt="">
-                <h3>Movie Ticket Booking System</h3>
-                <p>The system manages ticket booking details such as customer name, seat count, and booking information.
-                    It provides complete CRUD operations through REST APIs to handle booking management efficiently.</p>
-                <div class="btn-group">
-                     <a href="#" class="btn">Live Demo</a>
-                    <div class="btn"><a href="...">Github Link</a></div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="./assests/pro3.png" alt="">
-                <h3>Furniture E-Commerce Web Application</h3>
-                <p>The application enables customers to view furniture items, add products to cart, place orders, and
-                    manage their accounts. Admin users can add, update, and delete products from the system. The project
-                    demonstrates complete CRUD operations, authentication, and online shopping workflow.</p>
-                <div class="btn-group">
-                    <a href="#" class="btn">Live Demo</a>
-                    <div class="btn"><a href="...">Github Link</a></div>
-                </div>
-            </div>
+          
 
 
         </div>
@@ -166,32 +200,46 @@
         <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
             <div class="input">
-                <input type="text" placeholder="example@gmail.com">
+                <input type="email" id="userEmail" placeholder="example@gmail.com" required>
                 <i class="bi bi-envelope"></i>
 
             </div>
-            <div class="btn">Submit</div>
+            <button type="button" class="btn" onclick="sendEmail()">
+                Submit
+            </button>
+
+            <p id="error-msg" style="color:red; margin-top:10px;"></p>
+
         </div>
     </section>
-   <footer>
-    <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <footer>
+        <footer>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <p class="copyright">
-        © 2026 Tushar Gawande | All Rights Reserved
-    </p>
-</footer>
-
-
-
+            <p class="copyright">
+                © 2026 Tushar Gawande | All Rights Reserved
+            </p>
+        </footer>
 
 
 
-    <script src="./js/script.js"></script>
+  <!-- Popup Modal -->
+            <div id="projectModal" class="modal">
+                <div class="modal-content">
+                    <p>This was my college project. Links are not available.</p>
+                    <button class="btn" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+        
 </body>
 
 </html>
