@@ -1,9 +1,9 @@
-const menuIcon =document.querySelector('#menu-icon');
-const navLinks =document.querySelector('.nav-links');
+const menuIcon = document.querySelector('#menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
 /*navbar responsiveness*/
-menuIcon.onclick =()=>{
-navLinks.classList.toggle('active');
+menuIcon.onclick = () => {
+    navLinks.classList.toggle('active');
 }
 
 /*contact me validation  */
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
                 value: 50
             },
             color: {
-                value: "#00adb5"
+                value: "#a5c5e1"
             },
             shape: {
                 type: "char",
